@@ -27,6 +27,12 @@ class HomeController extends GetxController {
     print('first frame call this');
   }
 
+  @override
+  void onClose() {
+    super.onClose();
+    print('onClose');
+  }
+
   void add() {
     count++;
   }
