@@ -1,5 +1,6 @@
 ///数据实体类, 与数据库字段一一对应, 不能进行数据串改
 class User {
+  User();
   factory User.fromJson(Map<String, dynamic> data) {
     return User.name(data['age'], data['username'], data['sex']);
   }
